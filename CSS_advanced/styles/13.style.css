@@ -1,7 +1,6 @@
 /* 
-    Root element to define following custom properties
- */
-
+    declarations with pseudo classes
+*/
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
