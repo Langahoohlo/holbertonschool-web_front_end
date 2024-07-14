@@ -2,7 +2,7 @@
     Root element to define following custom properties
  */
 
- html {
+html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
@@ -13,11 +13,10 @@
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
-    
     --text-color: var(--color-black);
-    
+
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
@@ -55,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-.card-category {
+.card-category{
     color: var(--color-primary);
 }
 
@@ -65,7 +64,7 @@ a {
 
 .section-tagline {
     color: var(--color-primary);
-    font: var(--font-family-title);
+    font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
