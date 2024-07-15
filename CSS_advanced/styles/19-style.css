@@ -11,8 +11,8 @@
     --text-color: var(--color-black);
   
     /* Fonts */
-    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
     
     /* Font size */
     --font-size-small: 1.2rem;
@@ -41,6 +41,7 @@
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
+    --section-tagline-margin: 0;
 
     /* nav */
     --nav-item-font-family: var(--font-family-title);
@@ -51,7 +52,6 @@
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 
-    --section-tagline-margin: 0;
 }
 
 *, *::before, *::after {
@@ -132,6 +132,7 @@ a:active {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
 }
 
 .container {
@@ -173,35 +174,30 @@ a:active {
     color: var(--nav-item-link-hover);
 }
 
-.section-tagline {
-    margin: var(--section-tagline-margin);
-}
-
-.ul .row {
-    margin: var(--section-tagline-margin);
+ul.row {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.row .col-1-3 {
+.col-1-3 {
     width: 33.33%;
     float: left;
     padding: 0.5rem;
 }
 
-.row .col-1-2 {
+.col-1-2 {
     width: 50%;
     float: left;
-    padding: 0.5rem;;
+    padding: 0.5rem;
 }
 
 .footer-copyright {
     margin: 0;
-    font: var(--font-size-small);
+    font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
-.ul .footer {
+.footer ul {
     text-align: right;
-    color: var(--text-color);
 }
